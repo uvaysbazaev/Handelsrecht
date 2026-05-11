@@ -6,8 +6,8 @@ import {viteSingleFile} from 'vite-plugin-singlefile';
 
 export default defineConfig(() => {
   return {
-    // Use relative paths so the built file works from file://
-    base: process.env.VITE_BASE_PATH || './',
+    // GitHub Pages deploys to /Handelsrecht/ subdirectory
+    base: '/Handelsrecht/',
     plugins: [react(), tailwindcss(), viteSingleFile()],
     resolve: {
       alias: {

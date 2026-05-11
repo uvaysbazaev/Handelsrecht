@@ -30,7 +30,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE_PATH: /juramaster-handelsrecth/
+          VITE_BASE_PATH: /Handelsrecht/
       # GitHub Pages SPA fallback: copy index.html to 404.html so client-side routes work on refresh
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
